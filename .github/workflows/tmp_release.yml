@@ -26,7 +26,8 @@ jobs:
           body: |
             🎉 Новый релиз ${{ env.TAG_NAME }}!
             - Автоматически сгенерирован GitHub Actions
-          draft: false
+            **Full Changelog**: https://github.com/bandysiklt/test_release/compare/v.1.0.0...v.1.0.2
+          draft: true
           prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
